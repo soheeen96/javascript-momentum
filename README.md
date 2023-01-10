@@ -1,5 +1,8 @@
 # <바닐라 js로 크롬 앱 만들기-강의 정리>
 
+## 주소
+https://soheeen96.github.io/javascript-momentum/
+
 ## 1. why js?!
 
 - 배경 : 넷스케이프 > 자바스크립트 만듬 / 인터렉션한 모션을 위해
