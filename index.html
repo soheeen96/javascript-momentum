@@ -4,34 +4,48 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Momentum</title>
   </head>
   <body>
-    <form id="login-form" class="hidden">
-      <input
-        type="text"
-        required
-        placeholder="What is your name?"
-        maxlength="15"
-      />
-      <input type="submit" value="Log In" />
-    </form>
-    <h1 id="greeting" class="hidden"></h1>
+    <div id="wrap" class="flx">
+      <div class="container flx">
+        <div class="top">
+          <ul id="weather" class="flx">
+            <li></li>
+            <li></li>
+          </ul>
+          <h2 id="clock">00:00:00</h2>
 
-    <form id="todo-form">
-      <input type="text" placeholder="Write a To Do and Press Enter" required />
-    </form>
-    <ul id="todo-list"></ul>
+          <form id="login-form" class="hidden">
+            <input
+              type="text"
+              required
+              placeholder="What is your name?"
+              maxlength="15"
+            />
+            <input type="submit" value="Log In" class="submit-btn" />
+          </form>
+          <h1 id="greeting" class="hidden"></h1>
 
-    <h2 id="clock">00:00:00</h2>
-    <div id="quote">
-      <span></span>
-      <span></span>
-    </div>
-    <div id="weather">
-      <span></span>
-      <span></span>
+          <form id="todo-form" class="hidden">
+            <h2>Today <span>To Do</span> List</h2>
+            <input
+              type="text"
+              placeholder="Write a To Do and Press Enter"
+              required
+            />
+          </form>
+          <ul id="todo-list"></ul>
+        </div>
+        <div class="bottom">
+          <div id="quote">
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
     </div>
     <script src="js/greeting.js"></script>
     <script src="js/clock.js"></script>
