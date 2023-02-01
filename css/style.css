@@ -107,7 +107,6 @@ input::placeholder {
   font-style: italic;
 }
 #greeting span {
-  font-size: 36px;
   font-weight: 700;
 }
 
@@ -164,4 +163,37 @@ input::placeholder {
   font-size: 14px;
   font-style: italic;
   font-weight: 300;
+}
+
+@media (max-width: 1080px) {
+  #weather {
+    position: static;
+    margin-bottom: min(40px, 4%);
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  #weather li span {
+    font-size: max(18px, 2.6vw);
+  }
+  #clock {
+    font-size: min(78px, 9vw);
+  }
+  #greeting {
+    font-size: max(20px, 3vw);
+  }
+  #todo-form h2 {
+    font-size: max(18px, 2.6vw);
+  }
+}
+
+@media (max-width: 768px) {
+  #todo-form input {
+    font-size: 16px;
+  }
+  #todo-form li {
+    font-size: 14px;
+  }
+  #quote {
+    font-size: 12px;
+  }
 }
